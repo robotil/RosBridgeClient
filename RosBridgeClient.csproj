@@ -77,9 +77,12 @@
     <Compile Include="Messages\Navigation\Odometry.cs" />
     <Compile Include="Messages\Sensor\CompressedImage.cs" />
     <Compile Include="Messages\Sensor\Image.cs" />
+    <Compile Include="Messages\Sensor\Imu.cs" />
     <Compile Include="Messages\Sensor\JointState.cs" />
     <Compile Include="Messages\Sensor\LaserScan.cs" />
     <Compile Include="Messages\Sensor\Joy.cs" />
+    <Compile Include="Messages\Sensor\NavSatFix.cs" />
+    <Compile Include="Messages\Sensor\NavSatStatus.cs" />
     <Compile Include="Messages\Sensor\PointCloud2.cs" />
     <Compile Include="Messages\Sensor\PointField.cs" />
     <Compile Include="Messages\Standard\Bool.cs" />
