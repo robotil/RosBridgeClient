@@ -26,9 +26,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
         public sbyte status; //8 bits
         public enum ServiceType: short {SERVICE_GPS=1, SERVICE_GLONASS=2, SERVICE_COMPASS = 4, SERVICE_GALILEO = 8 };
         public short service; //16 bits
-        public double[] velocity;
-        public double[] effort;
-
+        
         public NavSatStatus()
         {
             status = (sbyte) StatusType.STATUS_NO_FIX;
