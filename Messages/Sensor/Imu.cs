@@ -22,18 +22,18 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
         [JsonIgnore]
         public const string RosMessageName = "sensor_msgs/Imu";
         public Standard.Header header;
-        public Geometry.Quaternion orientation;
-        public float[] orientation_covariance;
-        public Geometry.Vector3 angular_velocity;
-        public float[] angular_velocity_covariance;
-        public Geometry.Vector3 linear_acceleration;
-        public float[] linear_acceleration_covariance;
+        public Geometry.Quaternion orientation; 
+        public float[] orientation_covariance; //should be -1
+        public Geometry.Vector3 angular_velocity; //rad/sec
+        public float[] angular_velocity_covariance; //should be -1
+        public Geometry.Vector3 linear_acceleration;  //m/s^2
+        public float[] linear_acceleration_covariance; //should be -1
 
         public Imu()
         {
             header = new Standard.Header();
             orientation = new Geometry.Quaternion();
-            orientation_covariance = new float[9];
+            orientation_covariance = new float[] {-1,0,0,0,-1,0,0,0,-1};
             angular_velocity = new Geometry.Vector3();
             angular_velocity_covariance = new float[9];
             linear_acceleration = new Geometry.Vector3();

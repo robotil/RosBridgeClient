@@ -22,8 +22,6 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
     {
         [JsonIgnore]
         public const string RosMessageName = "sensor_msgs/NavSatStatus";
-        public Standard.Header header;
-
         public enum StatusType: sbyte {STATUS_NO_FIX=-1, STATUS_FIX=0, STATUS_SBAS_FIX=1, STATUS_GBAS_FIX=2};
         public sbyte status; //8 bits
         public enum ServiceType: short {SERVICE_GPS=1, SERVICE_GLONASS=2, SERVICE_COMPASS = 4, SERVICE_GALILEO = 8 };
@@ -33,7 +31,6 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
 
         public NavSatStatus()
         {
-            header = new Standard.Header();
             status = (sbyte) StatusType.STATUS_NO_FIX;
             service = 0;  //Bitmask according ServiceType
             
