@@ -33,7 +33,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
         {
             header = new Standard.Header();
             orientation = new Geometry.Quaternion();
-            orientation_covariance = new float[] {-1,0,0,0,-1,0,0,0,-1};
+            orientation_covariance = new float[9]; //{-1,0,0,0,-1,0,0,0,-1};
             angular_velocity = new Geometry.Vector3();
             angular_velocity_covariance = new float[9];
             linear_acceleration = new Geometry.Vector3();
