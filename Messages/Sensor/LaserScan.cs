@@ -25,6 +25,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
         public float angle_min;
         public float angle_max;
         public float angle_increment;
+        public float scan_time;
         public float time_increment;
         public float range_min;
         public float range_max;
@@ -38,6 +39,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
             angle_max = 0;
             angle_increment = 0;
             time_increment = 0;
+            scan_time = 0;
             range_min = 0;
             range_max = 0;
             ranges = new float[0];
