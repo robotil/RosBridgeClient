@@ -67,11 +67,13 @@
     <Compile Include="Messages\Geometry\Transform.cs" />
     <Compile Include="Messages\Geometry\TransformStamped.cs" />
     <Compile Include="Messages\Geometry\Twist.cs" />
+    <Compile Include="Messages\Geometry\TwistStamped.cs" />
     <Compile Include="Messages\Geometry\TwistWithCovariance.cs" />
     <Compile Include="Messages\Geometry\Vector3.cs" />
     <Compile Include="Messages\Actionlib\GoalID.cs" />
     <Compile Include="Messages\Actionlib\GoalStatus.cs" />
     <Compile Include="Messages\Actionlib\GoalStatusArray.cs" />
+    <Compile Include="Messages\Mavros\OverrideRCIn.cs" />
     <Compile Include="Messages\Navigation\MapMetaData.cs" />
     <Compile Include="Messages\Navigation\OccupancyGrid.cs" />
     <Compile Include="Messages\Navigation\Odometry.cs" />
@@ -118,7 +120,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
-  <Import Project="/home/robil/Unity/Hub/Editor/2018.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/xbuild/14.0/bin/Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--Import Project="/home/robil/Unity/Hub/Editor/2018.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/xbuild/14.0/bin/Microsoft.CSharp.targets" / -->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
