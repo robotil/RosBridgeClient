@@ -78,6 +78,7 @@
     <Compile Include="Messages\Navigation\OccupancyGrid.cs" />
     <Compile Include="Messages\Navigation\Odometry.cs" />
     <Compile Include="Messages\Robil\MultiLaserScan.cs" />
+    <Compile Include="Messages\Rosgraph\Clock.cs" />
     <Compile Include="Messages\Sensor\CompressedImage.cs" />
     <Compile Include="Messages\Sensor\Image.cs" />
     <Compile Include="Messages\Sensor\Imu.cs" />
